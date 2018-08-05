@@ -1,0 +1,43 @@
+@import '../../../sharedStyles/colors';
+
+input[type*="checkbox"] {
+    cursor: pointer;
+}
+
+label input {
+    display: none;
+}
+  
+label span {
+    height: 8px;
+    width: 8px;
+    border: 2px solid $defaultBorderColor;
+    border-radius: 3px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+  
+[type=checkbox]:checked + span:before {
+    cursor: pointer;
+    content: '\2713';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    color: $controlsForeColor;
+}
+
+.checkboxContainer {
+    display: flex;
+    .label {
+        color: $textColor;
+        font-size: 11px;
+        font-family: 'Azo Sans Light';
+        margin-top: 1px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

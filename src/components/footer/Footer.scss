@@ -1,0 +1,67 @@
+@import '../../sharedStyles/colors';
+@import '../../sharedStyles/sizes';
+
+.Footer {
+    background-color: $mainBackColor;
+    height: 212px;
+
+    @media screen and (max-width: $small) {
+        height: 300px;
+    }
+
+    .container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        .leftColumn {
+            width: 33%;
+            text-align: right;
+            @media screen and (max-width: $large) {
+                width: 38%;
+            }
+        }
+        
+        .rightColumn {
+            width: 67%;
+            text-align: left;
+            @media screen and (max-width: $large) {
+                width: 62%;
+            }
+        }
+
+        .funkyText {
+            padding-right: 30px;
+            @media screen and (max-width: $large) {
+                padding-right: 20px;
+            }
+        }
+        
+        @media screen and (max-width: $medium) {
+            flex-direction: column;
+            .leftColumn {
+                height: 35%;
+            }
+            .rightColumn {
+                height: 65%;
+            }
+            .leftColumn, .rightColumn {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                text-align: center;
+                align-items: center;
+            }
+        }
+
+        @media screen and (max-width: $medium) {
+            flex-direction: column;
+            .leftColumn {
+                height: 30%;
+            }
+            .rightColumn {
+                height: 70%;
+            }
+        }
+    }
+}

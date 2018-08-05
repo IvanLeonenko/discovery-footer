@@ -1,0 +1,44 @@
+@import '../../sharedStyles/colors';
+@import '../../sharedStyles/sizes';
+
+.congrats {
+
+    .description {
+        font-family: 'Azo Sans Light';
+        font-size: 22px;
+        color: $defaultTitleColor;
+    }
+
+    @media screen and (max-width: $large) {
+        max-width: 440px;
+    }
+    @media screen and (max-width: $medium) {
+        max-width: 100%;
+        span {
+            max-width: 420px;
+        }
+    }
+
+    @media screen and (max-width: $small) {
+        p {
+            margin: 2px 0;
+        }
+        .stack, .rightColumn .stack {
+            input {
+                margin: 5px 0;
+                box-sizing: border-box;
+                width: 300px;
+            }
+            .default-title {
+                width: 300px;
+            }
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+}
+

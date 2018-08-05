@@ -1,0 +1,11 @@
+.stack {
+    display: flex;
+    flex-direction: column;
+    &.horizontal {
+        flex-direction: row;
+    }
+}
+
+input[type*="submit"] {
+    cursor: pointer;
+}   

@@ -1,0 +1,63 @@
+@import '../../sharedStyles/colors';
+@import '../../sharedStyles/sizes';
+
+.emailForm {
+    input, input[type*="email"], input[type*="text"], input[type*="submit"] {
+        margin-bottom: 15px;
+        max-width: 420px;
+    }
+    
+    .actionButton {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    @media screen and (max-width: $large) {
+        max-width: 440px;
+    }
+    @media screen and (max-width: $medium) {
+        input, input[type*="email"], input[type*="text"], input[type*="submit"] {
+            max-width: 260px;
+        }
+        .checkboxContainer {
+            max-width: 360px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .stack, .checkboxContainer{
+            justify-content: center;
+        }
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: $small) {
+        input, input[type*="email"], input[type*="text"], input[type*="submit"] {
+            max-width: 100%;
+        }
+        .checkboxContainer {
+            max-width: 300px;
+        }
+        .actionButton {
+            margin: 0;
+            width: 100%;
+        }
+        p {
+            margin: 2px 0;
+        }
+        .stack{
+            input {
+                margin: 5px 0;
+                box-sizing: border-box;
+                width: 300px;
+            }
+            .default-title {
+                width: 300px;
+            }
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        max-width: 100%;
+    }
+}

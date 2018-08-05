@@ -1,0 +1,23 @@
+@import '../../../sharedStyles/colors';
+@import '../../../sharedStyles/sizes';
+
+input[type*="email"], input[type*="text"] {
+    font-family: 'Azo Sans';
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    margin: 0;
+    color: hsla(0,0%,100%,.8);
+    border: 1px solid hsla(0,0%,100%,.01);
+    background-color: hsla(0,0%,100%,.1);
+    text-align: left;
+    font-weight: 300;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color .15s ease-in-out,color .15s ease-in-out,border-color .15s ease-in-out;
+
+    @media screen and (max-width: $large) {
+        max-width: 220px;
+    }
+}

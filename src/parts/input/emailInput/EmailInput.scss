@@ -1,0 +1,8 @@
+@import '../../../sharedStyles/colors';
+
+input[type*="email"]:valid {
+    color: $validColor;
+}
+input[type*="email"]:invalid {
+    color: $actionColor;
+}

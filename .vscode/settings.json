@@ -1,0 +1,8 @@
+{
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.workingDirectories": [
+        "./src"
+      ],
+    "eslint.validate": [ "javascript", "javascriptreact", "html" ]
+}

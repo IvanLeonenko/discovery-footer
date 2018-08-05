@@ -1,0 +1,20 @@
+@import '../../../sharedStyles/colors';
+
+.errorContainer {
+    color: $actionColor;
+    font-size: 11px;
+    font-family: 'Azo Sans Light';
+    overflow: hidden;
+    height: 0;
+
+    &.show {
+        height: 12px;
+        margin-bottom: 10px;
+
+        span {
+            line-height: 12px;
+            transition: all ease-in 3s;
+        }
+        
+    }
+}

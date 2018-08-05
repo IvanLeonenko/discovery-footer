@@ -1,0 +1,15 @@
+@import '../../../sharedStyles/colors';
+@import '../../../sharedStyles/sizes';
+
+.funkyText {
+    font-family: 'Elaine D02';
+    font-size: 72px;
+    color: $ctaTextColor;
+    margin: 0;
+    @media screen and (max-width: $xLarge) {
+        font-size: 60px;
+    }
+    @media screen and (max-width: $large) {
+        font-size: 50px;
+    }
+}

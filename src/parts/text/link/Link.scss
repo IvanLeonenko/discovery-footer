@@ -1,0 +1,13 @@
+@import '../../../sharedStyles/colors';
+
+a {
+    color: $textColor;
+    font-size: 11px;
+    font-family: 'Azo Sans Light';
+    text-decoration: underline;
+    
+    &:hover {
+        cursor: pointer;
+        color: white;
+    }
+}
